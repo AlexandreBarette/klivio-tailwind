@@ -8,31 +8,46 @@
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 	<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
-	<link href="../src/output.css" rel="stylesheet">
+	<link href="./src/output.css" rel="stylesheet">
 </head>
 
 <body>
 
 	<header>
-		<nav class="flex bg-black w-full items-center justify-between">
-				<img class=" w-[5.25rem] h-[1.938rem]" src="../assets/images/logo.png" alt="Klivio logo">
-			<p>Les formations</p>
-			<div class="search">
-				<input class="search-bar" type="search" placeholder="Rechercher">
-				<img class="w-[1.375rem] h-[1.5rem]" src="../assets/images/magnifying-glass-solid-full.svg" alt="Search icon">
+		<nav class="flex items-center bg-[#152237] text-white h-20">
+			<!-- Logo klivio -->
+			<div class="ml-7 sm:ml-20">
+				<img class="w-[5.25rem] h-[1.938rem]" src="./assets/images/logo.png" alt="Logo klivio">
 			</div>
-			<div class="user-buttons">
-				<button class="connexion" type="button">Connexion</button>
-				<button class="inscription" type="button">Inscription</button>
+    		<p class="hidden sm:block ml-40 font-medium text-sm">Les formations</p>
+			<!-- Search bar desktop -->
+			<div class="hidden sm:block relative ml-40">
+				<input class="bg-[#152237] border rounded-md w-[29.8125rem] h-10 pl-5 pr-12 placeholder-white"
+					type="search" placeholder="Rechercher">
+				<img class="absolute right-2 top-1/2 -translate-y-1/2 w-5 h-6"
+				src="./assets/images/magnifying-glass-solid-full.svg" alt="Loupe">
+			</div>
+			<!-- Connection buttons desktop -->
+			<div class="hidden sm:flex gap-5 ml-70">
+				<button class="w-32 h-10 rounded-md font-medium text-sm bg-white text-[#152237]">Connexion</button>
+				<button class="w-32 h-10 rounded-md font-medium text-sm bg-gradient-to-r from-[#44DD8A] to-[#15B7E2] text-[#152237]">Inscription</button>
+			</div>
+			<!-- Mobile burger -->
+			<div class="ml-auto mr-6 sm:hidden">
+				<img class="w-6 h-6" src="./assets/images/burger.png" alt="Icône menu">
 			</div>
 		</nav>
 	</header>
 
 	<!-- Jumbotron -->
 	<section class="jumbotron">
-		<div>
+		<div class="slogan">
 			<h1>Klivio, l'allié de votre progression</h1>
+		</div>
+		<div class="slogan2">
 			<h2>Les meilleures formations sur le développement personnel</h2>
+		</div>
+		<div class="slogan3">
 			<button class="learn-more" type="button">En savoir plus</button>
 		</div>
 	</section>
@@ -42,7 +57,7 @@
 		<h2 class="pop-form">Les formations populaires</h2>
 		<div class="pop-container">
 			<figure class="formation1">
-				<img src="../assets/images/img-course.png" alt="Green square">
+				<img src="./assets/images/img-course.png" alt="Carré vert">
 				<button class="price-tag">
 					15,99 € <span class="old-price">60 €</span>
 				</button>
@@ -50,18 +65,18 @@
 					<h3>Parler en public</h3>
 					<p>Sonia Lefèvre | Coach prise de parole</p>
 					<div class="rating">
-						<img src="../assets/images/star-solid-full.svg" alt="Star icon">
-						<img src="../assets/images/star-solid-full.svg" alt="Star icon">
-						<img src="../assets/images/star-solid-full.svg" alt="Star icon">
-						<img src="../assets/images/star-solid-full.svg" alt="Star icon">
-						<img src="../assets/images/star-solid-full.svg" alt="Star icon">
+						<img src="./assets/images/star-solid-full.svg" alt="Étoile">
+						<img src="./assets/images/star-solid-full.svg" alt="Étoile">
+						<img src="./assets/images/star-solid-full.svg" alt="Étoile">
+						<img src="./assets/images/star-solid-full.svg" alt="Étoile">
+						<img src="./assets/images/star-solid-full.svg" alt="Étoile">
 					</div>
 					<p>Gagnez en aisance et captez votre auditoire</p>
 				</figcaption>
 			</figure>
 
 			<figure class="formation2">
-					<img src="../assets/images/img-course.png" alt="Green square">
+					<img src="./assets/images/img-course.png" alt="Carré vert">
 					<button class="price-tag">
 						15,99 € <span class="old-price">60 €</span>
 					</button>
@@ -69,18 +84,18 @@
 					<h3>Gérer le stress</h3>
 					<p>Lucie Garnier | Formatrice</p>
 					<div class="rating">
-						<img src="../assets/images/star-solid-full.svg" alt="Star icon">
-						<img src="../assets/images/star-solid-full.svg" alt="Star icon">
-						<img src="../assets/images/star-solid-full.svg" alt="Star icon">
-						<img src="../assets/images/star-solid-full.svg" alt="Star icon">
-						<img class="not-filled" src="../assets/images/star-solid-full.svg" alt="Star icon">
+						<img src="./assets/images/star-solid-full.svg" alt="Étoile">
+						<img src="./assets/images/star-solid-full.svg" alt="Étoile">
+						<img src="./assets/images/star-solid-full.svg" alt="Étoile">
+						<img src="./assets/images/star-solid-full.svg" alt="Étoile">
+						<img class="not-filled" src="./assets/images/star-solid-full.svg" alt="Étoile vide">
 					</div>
 					<p>Apprenez à rester serein face aux défis</p>
 				</figcaption>
 			</figure>
 
 			<figure class="formation3">
-					<img src="../assets/images/img-course.png" alt="Green square">
+					<img src="./assets/images/img-course.png" alt="Carré vert">
 					<button class="price-tag">
 						15,99 € <span class="old-price">60 €</span>
 					</button>
@@ -88,18 +103,18 @@
 					<h3>Travailler en équipe</h3>
 					<p>David Moreau | Expert</p>
 					<div class="rating">
-						<img src="../assets/images/star-solid-full.svg" alt="Star icon">
-						<img src="../assets/images/star-solid-full.svg" alt="Star icon">
-						<img src="../assets/images/star-solid-full.svg" alt="Star icon">
-						<img src="../assets/images/star-solid-full.svg" alt="Star icon">
-						<img src="../assets/images/star-solid-full.svg" alt="Star icon">
+						<img src="./assets/images/star-solid-full.svg" alt="Étoile">
+						<img src="./assets/images/star-solid-full.svg" alt="Étoile">
+						<img src="./assets/images/star-solid-full.svg" alt="Étoile">
+						<img src="./assets/images/star-solid-full.svg" alt="Étoile">
+						<img src="./assets/images/star-solid-full.svg" alt="Étoile">
 					</div>
 					<p>Collaborez efficacement, même à distance</p>
 				</figcaption>
 			</figure>
 
 			<figure class="formation4">
-					<img src="../assets/images/img-course.png" alt="Green square">
+					<img src="./assets/images/img-course.png" alt="Carré vert">
 					<button class="price-tag">
 						15,99 € <span class="old-price">60 €</span>
 					</button>
@@ -107,11 +122,11 @@
 					<h3>Gérer son temps</h3>
 					<p>Claire Dumas | Coach organisation</p>
 					<div class="rating">
-						<img src="../assets/images/star-solid-full.svg" alt="Star icon">
-						<img src="../assets/images/star-solid-full.svg" alt="Star icon">
-						<img src="../assets/images/star-solid-full.svg" alt="Star icon">
-						<img src="../assets/images/star-solid-full.svg" alt="Star icon">
-						<img class="not-filled" src="../assets/images/star-solid-full.svg" alt="Star icon">
+						<img src="./assets/images/star-solid-full.svg" alt="Étoile">
+						<img src="./assets/images/star-solid-full.svg" alt="Étoile">
+						<img src="./assets/images/star-solid-full.svg" alt="Étoile">
+						<img src="./assets/images/star-solid-full.svg" alt="Étoile">
+						<img class="not-filled" src="./assets/images/star-solid-full.svg" alt="Étoile vide">
 					</div>
 					<p>Optimisez vos journées et gagnez en efficacité</p>
 				</figcaption>
@@ -127,7 +142,7 @@
 		<h2 class="recent-form">Les formations récentes</h2>
 		<div class="recent-container">
 			<figure class="formation1">
-					<img src="../assets/images/img-course.png" alt="Green square">
+					<img src="./assets/images/img-course.png" alt="Carré vert">
 					<button class="price-tag">
 						15,99 € <span class="old-price">60 €</span>
 					</button>
@@ -135,18 +150,18 @@
 					<h3>Mieux communiquer</h3>
 					<p>Julien Martel | Coach en comm.</p>
 					<div class="rating">
-						<img src="../assets/images/star-solid-full.svg" alt="Star icon">
-						<img src="../assets/images/star-solid-full.svg" alt="Star icon">
-						<img src="../assets/images/star-solid-full.svg" alt="Star icon">
-						<img src="../assets/images/star-solid-full.svg" alt="Star icon">
-						<img src="../assets/images/star-solid-full.svg" alt="Star icon">
+						<img src="./assets/images/star-solid-full.svg" alt="Étoile">
+						<img src="./assets/images/star-solid-full.svg" alt="Étoile">
+						<img src="./assets/images/star-solid-full.svg" alt="Étoile">
+						<img src="./assets/images/star-solid-full.svg" alt="Étoile">
+						<img src="./assets/images/star-solid-full.svg" alt="Étoile">
 					</div>
 					<p>Améliorez vos échanges et votre impact relationnel</p>
 				</figcaption>
 			</figure>
 
 			<figure class="formation2">
-					<img src="../assets/images/img-course.png" alt="Green square">
+					<img src="./assets/images/img-course.png" alt="Carré vert">
 					<button class="price-tag">
 						15,99 € <span class="old-price">60 €</span>
 					</button>
@@ -154,18 +169,18 @@
 					<h3>Maîtriser ses émotions</h3>
 					<p>Amel Benali | Psy. du travail</p>
 					<div class="rating">
-						<img src="../assets/images/star-solid-full.svg" alt="Star icon">
-						<img src="../assets/images/star-solid-full.svg" alt="Star icon">
-						<img src="../assets/images/star-solid-full.svg" alt="Star icon">
-						<img src="../assets/images/star-solid-full.svg" alt="Star icon">
-						<img class="not-filled" src="../assets/images/star-solid-full.svg" alt="Star icon">
+						<img src="./assets/images/star-solid-full.svg" alt="Étoile">
+						<img src="./assets/images/star-solid-full.svg" alt="Étoile">
+						<img src="./assets/images/star-solid-full.svg" alt="Étoile">
+						<img src="./assets/images/star-solid-full.svg" alt="Étoile">
+						<img class="not-filled" src="./assets/images/star-solid-full.svg" alt="Étoile vide">
 					</div>
 					<p>Développez calme et intelligence émotionnelle</p>
 				</figcaption>
 			</figure>
 
 			<figure class="formation3">
-					<img src="../assets/images/img-course.png" alt="Green square">
+					<img src="./assets/images/img-course.png" alt="Carré vert">
 					<button class="price-tag">
 						15,99 € <span class="old-price">60 €</span>
 					</button>
@@ -173,18 +188,18 @@
 					<h3>Résoudre les problèmes</h3>
 					<p>Thomas Rivière | Expert</p>
 					<div class="rating">
-						<img src="../assets/images/star-solid-full.svg" alt="Star icon">
-						<img src="../assets/images/star-solid-full.svg" alt="Star icon">
-						<img src="../assets/images/star-solid-full.svg" alt="Star icon">
-						<img src="../assets/images/star-solid-full.svg" alt="Star icon">
-						<img src="../assets/images/star-solid-full.svg" alt="Star icon">
+						<img src="./assets/images/star-solid-full.svg" alt="Étoile">
+						<img src="./assets/images/star-solid-full.svg" alt="Étoile">
+						<img src="./assets/images/star-solid-full.svg" alt="Étoile">
+						<img src="./assets/images/star-solid-full.svg" alt="Étoile">
+						<img src="./assets/images/star-solid-full.svg" alt="Étoile">
 					</div>
 					<p>Analysez, décidez et trouvez des solutions durables</p>
 				</figcaption>
 			</figure>
 
 			<figure class="formation4">
-					<img src="../assets/images/img-course.png" alt="Green square">
+					<img src="./assets/images/img-course.png" alt="Carré vert">
 					<button class="price-tag">
 						15,99 € <span class="old-price">60 €</span>
 					</button>
@@ -192,11 +207,11 @@
 					<h3>Leadership positif</h3>
 					<p>Marc Nguyen | Consultant</p>
 					<div class="rating">
-						<img src="../assets/images/star-solid-full.svg" alt="Star icon">
-						<img src="../assets/images/star-solid-full.svg" alt="Star icon">
-						<img src="../assets/images/star-solid-full.svg" alt="Star icon">
-						<img src="../assets/images/star-solid-full.svg" alt="Star icon">
-						<img class="not-filled" src="../assets/images/star-solid-full.svg" alt="Star icon">
+						<img src="./assets/images/star-solid-full.svg" alt="Étoile">
+						<img src="./assets/images/star-solid-full.svg" alt="Étoile">
+						<img src="./assets/images/star-solid-full.svg" alt="Étoile">
+						<img src="./assets/images/star-solid-full.svg" alt="Étoile">
+						<img class="not-filled" src="./assets/images/star-solid-full.svg" alt="Étoile vide">
 					</div>
 					<p>Inspirez, motivez et fédérez votre équipe</p>
 				</figcaption>
@@ -212,32 +227,32 @@
 		<h2 class="client-opinion">Avis clients</h2>
 		<div class="opinion-container">
 			<figure class="opinion1">
-				<img src="../assets/images/juliette.png" alt="Juliette picture">
+				<img src="./assets/images/juliette.png" alt="Photo de Juliette">
 				<figcaption>
 					<h3>Juliette</h3>
 					<div class="rating">
-						<img src="../assets/images/star-solid-full.svg" alt="Star icon">
-						<img src="../assets/images/star-solid-full.svg" alt="Star icon">
-						<img src="../assets/images/star-solid-full.svg" alt="Star icon">
-						<img src="../assets/images/star-solid-full.svg" alt="Star icon">
-						<img src="../assets/images/star-solid-full.svg" alt="Star icon">
+						<img src="./assets/images/star-solid-full.svg" alt="Étoile">
+						<img src="./assets/images/star-solid-full.svg" alt="Étoile">
+						<img src="./assets/images/star-solid-full.svg" alt="Étoile">
+						<img src="./assets/images/star-solid-full.svg" alt="Étoile">
+						<img src="./assets/images/star-solid-full.svg" alt="Étoile">
 					</div>
-					<p>J’ai trouvé le parcours très bien structuré : vidéos courtes, quizzes pertinents et projets pratiques qui m’ont permis d’appliquer immédiatement les notions. L’interface est claire et la progression est motivante — parfait pour se former en autonomie.</p>
+					<p class="pp">J’ai trouvé le parcours très bien structuré : vidéos courtes, quizzes pertinents et projets pratiques qui m’ont permis d’appliquer immédiatement les notions. L’interface est claire et la progression est motivante — parfait pour se former en autonomie.</p>
 				</figcaption>
 			</figure>
 
 			<figure class="opinion2">
-					<img src="../assets/images/camille.png" alt="Camille picture">
+					<img src="./assets/images/camille.png" alt="Photo de Camille">
 				<figcaption>
 					<h3>Camille</h3>
 					<div class="rating">
-						<img src="../assets/images/star-solid-full.svg" alt="Star icon">
-						<img src="../assets/images/star-solid-full.svg" alt="Star icon">
-						<img src="../assets/images/star-solid-full.svg" alt="Star icon">
-						<img src="../assets/images/star-solid-full.svg" alt="Star icon">
-						<img src="../assets/images/star-solid-full.svg" alt="Star icon">
+						<img src="./assets/images/star-solid-full.svg" alt="Étoile">
+						<img src="./assets/images/star-solid-full.svg" alt="Étoile">
+						<img src="./assets/images/star-solid-full.svg" alt="Étoile">
+						<img src="./assets/images/star-solid-full.svg" alt="Étoile">
+						<img src="./assets/images/star-solid-full.svg" alt="Étoile">
 					</div>
-					<p>Bon équilibre entre théorie et pratique. Les chapitres sont détaillés, et le support et les corrections automatiques ont vraiment aidé. Idéal pour démarrer et progresser rapidement.</p>
+					<p class="ppp">Bon équilibre entre théorie et pratique. Les chapitres sont détaillés, et le support et les corrections automatiques ont vraiment aidé. Idéal pour démarrer et progresser rapidement.</p>
 				</figcaption>
 			</figure>
 		</div>
@@ -248,43 +263,48 @@
 		<h2>Les avantages Klivio</h2>
 		<div class="advantages-container">
 			<div class="col1">
-				<img src="../assets/images/arrow-up-right.png" alt="Icône de flèche">
-				<img src="../assets/images/edit-01.png" alt="Star icon">
-				<img src="../assets/images/Icon.png" alt="Star icon">
-				<img src="../assets/images/star.png" alt="Star icon">
-				<img src="../assets/images/clock-backward.png" alt="Star icon">
-				<img src="../assets/images/mess.png" alt="Star icon">
+				<img src="./assets/images/arrow-up-right.png" alt="Icône de flèche">
+				<img src="./assets/images/edit-01.png" alt="Icône de crayon">
+				<img src="./assets/images/Icon.png" alt="Icône de téléchargement">
+				<img src="./assets/images/star.png" alt="Étoile">
+				<img src="./assets/images/clock-backward.png" alt="Icône horloge">
+				<img src="./assets/images/mess.png" alt="Icône message">
 			</div>
 			<div class="col2">
 				<p>Suivi de sa progression</p>
 				<p>Exercices et QCM pour la mise en pratique</p>
-				<p>Possibilité de télécharger/imprimer les formations</p>
+				<p class="desktop-p">Possibilité de télécharger/imprimer les formations</p>
+				<p class="mobile-p">Possibilité de télécharger/ imprimer les formations</p>
 				<p>Contenu qualitatif et vérifié</p>
 				<p>Suivi en autonomie, 24h/24, 7j/7</p>
 				<p>Espaces d’échanges dédiés pour poser ses questions sur les formations</p> 
 			</div>
-			<img class="img-advantage" src="../assets/images/avantages.png" alt="Personne travaillant sur son ordi">
+			<img class="img-advantage" src="./assets/images/avantages.png" alt="Personne travaillant sur son ordi">
+			<img class="img-advantage-mobile" src="./assets/images/advantages-mobile.png" alt="Personne travaillant sur son ordi">
 		</div>
 	</section>
+
 	<!-- Create -->
 	<section class="create">
-		<img class="img-create" src="../assets/images/become-author.png" alt="Personne notant dans son carnet">
+		<img class="img-create" src="./assets/images/become-author.png" alt="Personne notant dans son carnet">
 		<div class="create-right">
 			<h2>Créez vos formations avec Klivio</h2>
+			<h2>Créez vos formations</h2>
+			<img class="img-create-mobile" src="./assets/images/formation-mobile.png" alt="Personne notant dans son carnet">
 			<div class="create-container">
 				<div class="col-icon">
-					<img class="coin-hand" src="../assets/images/coin-hand.png" alt="Icône de flèche">
-					<img class="heart" src="../assets/images/heart.png" alt="Star icon">
-					<img class="pencil" src="../assets/images/pencil-01.png" alt="Star icon">
-					<img class="settings" src="../assets/images/settings.png" alt="Star icon">
-					<img src="../assets/images/user-profile-square.png" alt="Star icon">
+					<img class="coin-hand" src="./assets/images/coin-hand.png" alt="Icône de main avec pièces">
+					<img class="heart" src="./assets/images/heart.png" alt="Icône de cœur">
+					<img class="pencil" src="./assets/images/pencil-01.png" alt="Icône de crayon">
+					<img class="settings" src="./assets/images/settings.png" alt="Icône réglages">
+					<img src="./assets/images/user-profile-square.png" alt="Icône profil">
 				</div>
 				<div class="col-text">
 					<p>Commission unique, au pourcentage sur les ventes</p>
 					<p>Mise en avant sur la plateforme</p>
 					<p>Contrôle total sur le cours : contenu, prix</p>
 					<p>Fonctionnalités avancées : espace commentaires, possibilité de créer des QCM, exercices, vidéos, téléchargement en PDF, suivi des statistiques des ventes, gestion de codes promos, gestion de la facturation, etc</p>
-					<p>Le professeur reste 100% propriétaire de sa formation et conserve tous ses droits d’auteur</p> 
+					<p>Le professeur reste 100% propriétaire de sa<br>formation et conserve tous ses droits d’auteur</p> 
 				</div>
 			</div>
 		</div>
@@ -294,12 +314,15 @@
 	<section class="about">
 		<div class="about-container">
 			<h2>À propos de Klivio</h2>
-			<p>Chez Klivio, nous défendons des valeurs fondamentales qui définissent notre approche éducative. Nous nous engageons à assurer une rémunération équitable pour les créateurs de contenu, reconnaissant la qualité de leur travail.<br><br>
+			<p class="abt-desktop-p">Chez Klivio, nous défendons des valeurs fondamentales qui définissent notre approche éducative. Nous nous engageons à assurer une rémunération équitable pour les créateurs de contenu, reconnaissant la qualité de leur travail.<br><br>
 				Favorisant l'autonomie d'apprentissage, notre plateforme offre la flexibilité  nécessaire pour explorer divers sujets. La transparence est au cœur de notre démarche, garantissant une clarté totale sur les formations que les instructeurs proposent. Ensemble, ces valeurs forment le socle d'une  éducation enrichissante et équitable, guidant notre mission d'offrir des opportunités d'apprentissage de qualité.
+			</p>
+			<p class="abt-mobile-p">Chez Klivio, nous défendons des valeurs fondamentales qui définissent notre approche éducative. Nous nous engageons à assurer une rémunération équitable pour les créateurs de contenu, reconnaissant la qualité de leur travail.<br><br>
+				Favorisant l'autonomie d'apprentissage, notre plateforme offre la flexibilité  nécessaire pour explorer divers sujets. La transparence est au cœur de notre démarche, garantissant une clarté totale sur les formations que les instructeurs proposent. Ensemble, ces valeurs forment le socle d'une  éducation enrichissante et équitable, guidant notre mission d'offrir des opportunités d'apprentissage de qualité
 			</p>
 		</div>
 		<div class="img-side">
-			<img src="../assets/images/logo.png" alt="Klivio logo">
+			<img src="./assets/images/logo.png" alt="Logo klivio">
 		</div>
 	</section>
 
@@ -308,11 +331,11 @@
 		<h2>Nous contacter</h2>
 		<div class="contact-line"></div>
 		<div class="contact-container">
-			<input type="text" placeholder="Nom">
-			<input type="email" placeholder="Email">
+			<input type="text" placeholder="Nom" aria-label="Nom">
+			<input type="email" placeholder="Email" aria-label="Email">
 		</div>
 		<div class="contact-container">
-			<textarea placeholder="Votre message"></textarea>
+			<textarea placeholder="Votre message" aria-label="Votre message"></textarea>
 		</div>
 		<button class="submit-btn">Envoyer</button>
 	</section>
@@ -320,21 +343,21 @@
 	<footer>
 		<div class="bar"></div>
 		<div class="top">
-			<img class="klivio-logo" src="../assets/images/logo.png" alt="Klivio logo">
+			<img class="klivio-logo" src="./assets/images/logo.png" alt="Logo klivio">
 			<div class="legal">
 				<h2>Mentions légales</h2>
-				<p>CGU</p>
-				<p>CGV</p>
-				<p>FAQ</p>
-				<p>Contact</p>
+					<p>CGU</p>
+					<p>CGV</p>
+					<p>FAQ</p>
+					<p>Contact</p>
 			</div>
 			<div class="coordinates">
 				<h2>Coordonnées</h2>
 				<div class="coord-info">
 					<div class="coordinates-icon">
-						<img src="../assets/images/marker-02.png" alt="Klivio logo">
-						<img id="a" src="../assets/images/phone.png" alt="Klivio logo">
-						<img id="b" src="../assets/images/mail-01.png" alt="Klivio logo">
+						<img src="./assets/images/marker-02.png" alt="Icône localisation">
+						<img id="a" src="./assets/images/phone.png" alt="Icône téléphone">
+						<img id="b" src="./assets/images/mail-01.png" alt="Icône enveloppe">
 					</div>
 					<div class="coordinates-text">
 						<p>1 place république, 75003 Paris</p>
@@ -353,10 +376,10 @@
 			<p class="copyright">© Klivio -  2025</p>
 			<div class="follow">
 				<p>Suivez - nous</p>
-				<img class="follow-icon" src="../assets/images/Social-Icons.png" alt="Klivio logo">
-				<img class="follow-icon" src="../assets/images/Social-Icons1.png" alt="Klivio logo">
-				<img class="follow-icon-last" src="../assets/images/Social-Icons2.png" alt="Klivio logo">
-				<img src="../assets/images/Vector.png" alt="Klivio logo">
+				<img class="follow-icon" src="./assets/images/Social-Icons.png" alt="Icône Facebook">
+				<img class="follow-icon" src="./assets/images/Social-Icons1.png" alt="Icône X">
+				<img class="follow-icon-last" src="./assets/images/Social-Icons2.png" alt="Icône Instagram">
+				<img src="./assets/images/Vector.png" alt="Icône Linkedin">
 			</div>
 		</div>
 	</footer>
