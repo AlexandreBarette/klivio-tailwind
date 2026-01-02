@@ -1,1 +1,1 @@
-Link klivio-tailwind: https://alexandrebarette.github.io/klivio-tailwind/index.html
+Link page: https://alexandrebarette.github.io/klivio-tailwind/index.html
