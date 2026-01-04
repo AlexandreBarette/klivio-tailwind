@@ -15,23 +15,27 @@
 
 	<header>
 		<nav class="flex items-center bg-[#152237] text-white h-20">
+
 			<!-- Logo klivio -->
 			<div class="ml-7 sm:ml-20">
-				<img class="w-[5.25rem] h-[1.938rem]" src="./assets/images/logo.png" alt="Logo klivio">
+				<img class="w-21 h-8" src="./assets/images/logo.png" alt="Logo klivio">
 			</div>
     		<p class="hidden sm:block ml-40 font-medium text-sm">Les formations</p>
+
 			<!-- Search bar desktop -->
 			<div class="hidden sm:block relative ml-40">
-				<input class="bg-[#152237] border rounded-md w-[29.8125rem] h-10 pl-5 pr-12 placeholder-white"
+				<input class="bg-[#152237] border rounded-md w-120 h-10 pl-5 pr-12 placeholder-white"
 					type="search" placeholder="Rechercher">
 				<img class="absolute right-2 top-1/2 -translate-y-1/2 w-5 h-6"
 				src="./assets/images/magnifying-glass-solid-full.svg" alt="Loupe">
 			</div>
+
 			<!-- Connection buttons desktop -->
 			<div class="hidden sm:flex gap-5 ml-70">
 				<button class="w-32 h-10 rounded-md font-medium text-sm bg-white text-[#152237]">Connexion</button>
 				<button class="w-32 h-10 rounded-md font-medium text-sm bg-gradient-to-r from-[#44DD8A] to-[#15B7E2] text-[#152237]">Inscription</button>
 			</div>
+
 			<!-- Mobile burger -->
 			<div class="ml-auto mr-6 sm:hidden">
 				<img class="w-6 h-6" src="./assets/images/burger.png" alt="Icône menu">
@@ -40,229 +44,291 @@
 	</header>
 
 	<!-- Jumbotron -->
-	<section class="jumbotron">
-		<div class="slogan">
-			<h1>Klivio, l'allié de votre progression</h1>
-		</div>
-		<div class="slogan2">
-			<h2>Les meilleures formations sur le développement personnel</h2>
-		</div>
-		<div class="slogan3">
-			<button class="learn-more" type="button">En savoir plus</button>
-		</div>
+	<section class="w-full h-100 uppercase text-[#152237] text-center bg-gradient-to-r from-[#44DD8A] to-[#15B7E2]">
+
+		<!-- Slogan 1 -->
+		<h1 class="text-3xl sm:text-5xl font-extrabold pt-20">
+			Klivio, l'allié de votre progression
+		</h1>
+
+		<!-- Slogan 2 -->
+		<h2 class="text-xl sm:text-2xl font-medium mt-5">
+			Les meilleures formations sur le développement personnel
+		</h2>
+
+		<!-- Leanr more -->
+		<button class="w-32 h-10 rounded-md font-medium bg-white mt-8">
+			En savoir plus
+		</button>
 	</section>
 
 	<!-- Popular -->
-	<section class="popular">
-		<h2 class="pop-form">Les formations populaires</h2>
-		<div class="pop-container">
-			<figure class="formation1">
-				<img src="./assets/images/img-course.png" alt="Carré vert">
-				<button class="price-tag">
-					15,99 € <span class="old-price">60 €</span>
+	<section class="px-4 sm:px-24">
+
+		<h2 class="text-center sm:text-left font-extrabold text-4xl sm:text-5xl text-[#152237] my-8 sm:my-12">
+		Les formations populaires
+		</h2>
+
+		<div class="flex flex-col sm:flex-row sm:gap-20">
+
+			<!-- Formation 1 -->
+			<figure class="relative mb-8 sm:mb-6 sm:px-3 w-full sm:w-80">
+				<img class="block w-full h-auto" src="./assets/images/img-course.png" alt="Carré vert">
+				<button class="absolute sm:top-45 right-4 w-30 h-8 bg-[#152237] text-white font-bold rounded-full shadow-md flex items-center justify-center gap-1 text-lg whitespace-nowrap">
+					15,99 € 
+					<span class="line-through text-xs ml-1">60 €</span>
 				</button>
-				<figcaption>
-					<h3>Parler en public</h3>
-					<p>Sonia Lefèvre | Coach prise de parole</p>
-					<div class="rating">
-						<img src="./assets/images/star-solid-full.svg" alt="Étoile">
-						<img src="./assets/images/star-solid-full.svg" alt="Étoile">
-						<img src="./assets/images/star-solid-full.svg" alt="Étoile">
-						<img src="./assets/images/star-solid-full.svg" alt="Étoile">
-						<img src="./assets/images/star-solid-full.svg" alt="Étoile">
+				<figcaption class="mt-2">
+					<h3 class="text-[#152237] font-bold text-xl	 mb-1 mt-3">Parler en public</h3>
+					<p class="mb-2">Sonia Lefèvre | Coach prise de parole</p>
+					<div class="flex mb-1">
+						<img class="w-5 h-5" src="./assets/images/star-solid-full.svg" alt="Étoile">
+						<img class="w-5 h-5" src="./assets/images/star-solid-full.svg" alt="Étoile">
+						<img class="w-5 h-5" src="./assets/images/star-solid-full.svg" alt="Étoile">
+						<img class="w-5 h-5" src="./assets/images/star-solid-full.svg" alt="Étoile">
+						<img class="w-5 h-5" src="./assets/images/star-solid-full.svg" alt="Étoile">
 					</div>
 					<p>Gagnez en aisance et captez votre auditoire</p>
 				</figcaption>
 			</figure>
 
-			<figure class="formation2">
-					<img src="./assets/images/img-course.png" alt="Carré vert">
-					<button class="price-tag">
-						15,99 € <span class="old-price">60 €</span>
-					</button>
-				<figcaption>
-					<h3>Gérer le stress</h3>
-					<p>Lucie Garnier | Formatrice</p>
-					<div class="rating">
-						<img src="./assets/images/star-solid-full.svg" alt="Étoile">
-						<img src="./assets/images/star-solid-full.svg" alt="Étoile">
-						<img src="./assets/images/star-solid-full.svg" alt="Étoile">
-						<img src="./assets/images/star-solid-full.svg" alt="Étoile">
-						<img class="not-filled" src="./assets/images/star-solid-full.svg" alt="Étoile vide">
+			<!-- Formation 2 -->
+			<figure class="relative mb-8 sm:mb-6 sm:px-3 w-full sm:w-80">
+				<img class="block w-full h-auto" src="./assets/images/img-course.png" alt="Carré vert">
+				<button class="absolute sm:top-45 right-4 w-30 h-8 bg-[#152237] text-white font-bold rounded-full shadow-md flex items-center justify-center gap-1 text-lg whitespace-nowrap">
+					15,99 € 
+					<span class="line-through text-xs ml-1">60 €</span>
+				</button>
+				<figcaption class="mt-2">
+					<h3 class="text-[#152237] font-bold text-xl	 mb-1 mt-3">Gérer le stress</h3>
+					<p class="mb-2">Lucie Garnier | Formatrice</p>
+					<div class="flex mb-1">
+						<img class="w-5 h-5" src="./assets/images/star-solid-full.svg" alt="Étoile">
+						<img class="w-5 h-5" src="./assets/images/star-solid-full.svg" alt="Étoile">
+						<img class="w-5 h-5" src="./assets/images/star-solid-full.svg" alt="Étoile">
+						<img class="w-5 h-5" src="./assets/images/star-solid-full.svg" alt="Étoile">
+						<img class="w-5 h-5 opacity-30" src="./assets/images/star-solid-full.svg" alt="Étoile">
 					</div>
 					<p>Apprenez à rester serein face aux défis</p>
 				</figcaption>
 			</figure>
 
-			<figure class="formation3">
-					<img src="./assets/images/img-course.png" alt="Carré vert">
-					<button class="price-tag">
-						15,99 € <span class="old-price">60 €</span>
-					</button>
-				<figcaption>
-					<h3>Travailler en équipe</h3>
-					<p>David Moreau | Expert</p>
-					<div class="rating">
-						<img src="./assets/images/star-solid-full.svg" alt="Étoile">
-						<img src="./assets/images/star-solid-full.svg" alt="Étoile">
-						<img src="./assets/images/star-solid-full.svg" alt="Étoile">
-						<img src="./assets/images/star-solid-full.svg" alt="Étoile">
-						<img src="./assets/images/star-solid-full.svg" alt="Étoile">
+			<!-- Formation 3 -->
+			<figure class="relative mb-8 sm:mb-6 sm:px-3 w-full sm:w-80">
+				<img class="block w-full h-auto" src="./assets/images/img-course.png" alt="Carré vert">
+				<button class="absolute sm:top-45 right-4 w-30 h-8 bg-[#152237] text-white font-bold rounded-full shadow-md flex items-center justify-center gap-1 text-lg whitespace-nowrap">
+					15,99 € 
+					<span class="line-through text-xs ml-1">60 €</span>
+				</button>
+				<figcaption class="mt-2">
+					<h3 class="text-[#152237] font-bold text-xl	 mb-1 mt-3">Travailler en équipe</h3>
+					<p class="mb-2">David Moreau | Expert</p>
+					<div class="flex mb-1">
+						<img class="w-5 h-5" src="./assets/images/star-solid-full.svg" alt="Étoile">
+						<img class="w-5 h-5" src="./assets/images/star-solid-full.svg" alt="Étoile">
+						<img class="w-5 h-5" src="./assets/images/star-solid-full.svg" alt="Étoile">
+						<img class="w-5 h-5" src="./assets/images/star-solid-full.svg" alt="Étoile">
+						<img class="w-5 h-5" src="./assets/images/star-solid-full.svg" alt="Étoile">
 					</div>
 					<p>Collaborez efficacement, même à distance</p>
 				</figcaption>
 			</figure>
 
-			<figure class="formation4">
-					<img src="./assets/images/img-course.png" alt="Carré vert">
-					<button class="price-tag">
-						15,99 € <span class="old-price">60 €</span>
-					</button>
-				<figcaption>
-					<h3>Gérer son temps</h3>
-					<p>Claire Dumas | Coach organisation</p>
-					<div class="rating">
-						<img src="./assets/images/star-solid-full.svg" alt="Étoile">
-						<img src="./assets/images/star-solid-full.svg" alt="Étoile">
-						<img src="./assets/images/star-solid-full.svg" alt="Étoile">
-						<img src="./assets/images/star-solid-full.svg" alt="Étoile">
-						<img class="not-filled" src="./assets/images/star-solid-full.svg" alt="Étoile vide">
-					</div>
-					<p>Optimisez vos journées et gagnez en efficacité</p>
+			<!-- Formation 4 -->
+			<figure class="relative mb-8 sm:mb-6 sm:px-3 w-full sm:w-80">
+				<img class="block w-full h-auto" src="./assets/images/img-course.png" alt="Carré vert">
+				<button class="absolute sm:top-45 right-4 w-30 h-8 bg-[#152237] text-white font-bold rounded-full shadow-md flex items-center justify-center gap-1 text-lg whitespace-nowrap">
+					15,99 € 
+					<span class="line-through text-xs ml-1">60 €</span>
+				</button>
+				<figcaption class="mt-2">
+					<h3 class="text-[#152237] font-bold text-xl	 mb-1 mt-3">Gérer son temps</h3>
+					<p class="mb-2">Claire Dumas | Coach organisation</p>
+				<div class="flex mb-1">
+					<img class="w-5 h-5" src="./assets/images/star-solid-full.svg" alt="Étoile">
+					<img class="w-5 h-5" src="./assets/images/star-solid-full.svg" alt="Étoile">
+					<img class="w-5 h-5" src="./assets/images/star-solid-full.svg" alt="Étoile">
+					<img class="w-5 h-5" src="./assets/images/star-solid-full.svg" alt="Étoile">
+					<img class="w-5 h-5 opacity-30" src="./assets/images/star-solid-full.svg" alt="Étoile">
+				</div>
+				<p>Optimisez vos journées et gagnez en efficacité</p>
 				</figcaption>
 			</figure>
 		</div>
-		<div class="see-more-btn">
-			<button class="see-more" type="button">Voir plus de formations</button>
+
+		<!-- See more -->
+		<div class="text-center">
+			<button class="w-56 h-10 rounded-md bg-[#152237] text-white font-medium text-sm mt-10 mb-12">
+				Voir plus de formations
+			</button>
 		</div>
 	</section>
 
 	<!-- Recent -->
-	<section class="recent">
-		<h2 class="recent-form">Les formations récentes</h2>
-		<div class="recent-container">
-			<figure class="formation1">
-					<img src="./assets/images/img-course.png" alt="Carré vert">
-					<button class="price-tag">
-						15,99 € <span class="old-price">60 €</span>
-					</button>
-				<figcaption>
-					<h3>Mieux communiquer</h3>
-					<p>Julien Martel | Coach en comm.</p>
-					<div class="rating">
-						<img src="./assets/images/star-solid-full.svg" alt="Étoile">
-						<img src="./assets/images/star-solid-full.svg" alt="Étoile">
-						<img src="./assets/images/star-solid-full.svg" alt="Étoile">
-						<img src="./assets/images/star-solid-full.svg" alt="Étoile">
-						<img src="./assets/images/star-solid-full.svg" alt="Étoile">
+	<section class="px-4 py-8 sm:px-24 sm:py-12 bg-[#152237] text-white">
+
+		<h2 class="text-center sm:text-left font-extrabold text-4xl sm:text-5xl mb-8 sm:mb-12">
+			Les formations récentes
+		</h2>
+
+		<div class="flex flex-col sm:flex-row sm:gap-20">
+
+			<!-- Formation 1 -->
+			<figure class="relative mb-8 sm:mb-6 sm:px-3 w-full sm:w-80">
+				<img class="block w-full h-auto" src="./assets/images/img-course.png" alt="Carré vert">
+				<button class="absolute sm:top-45 right-4 w-30 h-8 bg-white text-[#152237] font-bold rounded-full shadow-md flex items-center justify-center gap-1 text-lg whitespace-nowrap">
+					15,99 € 
+					<span class="line-through text-xs ml-1">60 €</span>
+				</button>
+				<figcaption class="mt-2">
+					<h3 class="font-bold text-xl mb-1 mt-3">Mieux communiquer</h3>
+					<p class="mb-2">Julien Martel | Coach en comm.</p>
+					<div class="flex mb-1">
+						<img class="w-5 h-5" src="./assets/images/star-solid-full.svg" alt="Étoile">
+						<img class="w-5 h-5" src="./assets/images/star-solid-full.svg" alt="Étoile">
+						<img class="w-5 h-5" src="./assets/images/star-solid-full.svg" alt="Étoile">
+						<img class="w-5 h-5" src="./assets/images/star-solid-full.svg" alt="Étoile">
+						<img class="w-5 h-5" src="./assets/images/star-solid-full.svg" alt="Étoile">
 					</div>
 					<p>Améliorez vos échanges et votre impact relationnel</p>
 				</figcaption>
 			</figure>
 
-			<figure class="formation2">
-					<img src="./assets/images/img-course.png" alt="Carré vert">
-					<button class="price-tag">
-						15,99 € <span class="old-price">60 €</span>
-					</button>
-				<figcaption>
-					<h3>Maîtriser ses émotions</h3>
-					<p>Amel Benali | Psy. du travail</p>
-					<div class="rating">
-						<img src="./assets/images/star-solid-full.svg" alt="Étoile">
-						<img src="./assets/images/star-solid-full.svg" alt="Étoile">
-						<img src="./assets/images/star-solid-full.svg" alt="Étoile">
-						<img src="./assets/images/star-solid-full.svg" alt="Étoile">
-						<img class="not-filled" src="./assets/images/star-solid-full.svg" alt="Étoile vide">
+			<!-- Formation 2 -->
+			<figure class="relative mb-8 sm:mb-6 sm:px-3 w-full sm:w-80">
+				<img class="block w-full h-auto" src="./assets/images/img-course.png" alt="Carré vert">
+				<button class="absolute sm:top-45 right-4 w-30 h-8 bg-white text-[#152237] font-bold rounded-full shadow-md flex items-center justify-center gap-1 text-lg whitespace-nowrap">
+					15,99 € 
+					<span class="line-through text-xs ml-1">60 €</span>
+				</button>
+				<figcaption class="mt-2">
+					<h3 class="font-bold text-xl mb-1 mt-3">Maîtriser ses émotions</h3>
+					<p class="mb-2">Amel Benali | Psy. du travail</p>
+					<div class="flex mb-1">
+						<img class="w-5 h-5" src="./assets/images/star-solid-full.svg" alt="Étoile">
+						<img class="w-5 h-5" src="./assets/images/star-solid-full.svg" alt="Étoile">
+						<img class="w-5 h-5" src="./assets/images/star-solid-full.svg" alt="Étoile">
+						<img class="w-5 h-5" src="./assets/images/star-solid-full.svg" alt="Étoile">
+						<img class="w-5 h-5 opacity-30" src="./assets/images/star-solid-full.svg" alt="Étoile">
 					</div>
 					<p>Développez calme et intelligence émotionnelle</p>
 				</figcaption>
 			</figure>
 
-			<figure class="formation3">
-					<img src="./assets/images/img-course.png" alt="Carré vert">
-					<button class="price-tag">
-						15,99 € <span class="old-price">60 €</span>
-					</button>
-				<figcaption>
-					<h3>Résoudre les problèmes</h3>
-					<p>Thomas Rivière | Expert</p>
-					<div class="rating">
-						<img src="./assets/images/star-solid-full.svg" alt="Étoile">
-						<img src="./assets/images/star-solid-full.svg" alt="Étoile">
-						<img src="./assets/images/star-solid-full.svg" alt="Étoile">
-						<img src="./assets/images/star-solid-full.svg" alt="Étoile">
-						<img src="./assets/images/star-solid-full.svg" alt="Étoile">
+			<!-- Formation 3 -->
+			<figure class="relative mb-8 sm:mb-6 sm:px-3 w-full sm:w-80">
+				<img class="block w-full h-auto" src="./assets/images/img-course.png" alt="Carré vert">
+				<button class="absolute sm:top-45 right-4 w-30 h-8 bg-white text-[#152237] font-bold rounded-full shadow-md flex items-center justify-center gap-1 text-lg whitespace-nowrap">
+					15,99 € 
+					<span class="line-through text-xs ml-1">60 €</span>
+				</button>
+				<figcaption class="mt-2">
+					<h3 class="font-bold text-xl mb-1 mt-3">Résoudre les problèmes</h3>
+					<p class="mb-2">Thomas Rivière | Expert</p>
+					<div class="flex mb-1">
+						<img class="w-5 h-5" src="./assets/images/star-solid-full.svg" alt="Étoile">
+						<img class="w-5 h-5" src="./assets/images/star-solid-full.svg" alt="Étoile">
+						<img class="w-5 h-5" src="./assets/images/star-solid-full.svg" alt="Étoile">
+						<img class="w-5 h-5" src="./assets/images/star-solid-full.svg" alt="Étoile">
+						<img class="w-5 h-5" src="./assets/images/star-solid-full.svg" alt="Étoile">
 					</div>
 					<p>Analysez, décidez et trouvez des solutions durables</p>
 				</figcaption>
 			</figure>
 
-			<figure class="formation4">
-					<img src="./assets/images/img-course.png" alt="Carré vert">
-					<button class="price-tag">
-						15,99 € <span class="old-price">60 €</span>
-					</button>
-				<figcaption>
-					<h3>Leadership positif</h3>
-					<p>Marc Nguyen | Consultant</p>
-					<div class="rating">
-						<img src="./assets/images/star-solid-full.svg" alt="Étoile">
-						<img src="./assets/images/star-solid-full.svg" alt="Étoile">
-						<img src="./assets/images/star-solid-full.svg" alt="Étoile">
-						<img src="./assets/images/star-solid-full.svg" alt="Étoile">
-						<img class="not-filled" src="./assets/images/star-solid-full.svg" alt="Étoile vide">
+			<!-- Formation 4 -->
+			<figure class="relative mb-8 sm:mb-6 sm:px-3 w-full sm:w-80">
+				<img class="block w-full h-auto" src="./assets/images/img-course.png" alt="Carré vert">
+				<button class="absolute sm:top-45 right-4 w-30 h-8 bg-white text-[#152237] font-bold rounded-full shadow-md flex items-center justify-center gap-1 text-lg whitespace-nowrap">
+					15,99 € 
+					<span class="line-through text-xs ml-1">60 €</span>
+				</button>
+				<figcaption class="mt-2">
+					<h3 class="font-bold text-xl mb-1 mt-3">Leadership positif</h3>
+					<p class="mb-2">Marc Nguyen | Consultant</p>
+					<div class="flex mb-1">
+						<img class="w-5 h-5" src="./assets/images/star-solid-full.svg" alt="Étoile">
+						<img class="w-5 h-5" src="./assets/images/star-solid-full.svg" alt="Étoile">
+						<img class="w-5 h-5" src="./assets/images/star-solid-full.svg" alt="Étoile">
+						<img class="w-5 h-5" src="./assets/images/star-solid-full.svg" alt="Étoile">
+						<img class="w-5 h-5 opacity-30" src="./assets/images/star-solid-full.svg" alt="Étoile">
 					</div>
 					<p>Inspirez, motivez et fédérez votre équipe</p>
 				</figcaption>
 			</figure>
 		</div>
-		<div class="see-more-btn">
-			<button class="see-more" type="button">Voir plus de formations</button>
+		<!-- See more -->
+		<div class="text-center">
+			<button class="w-56 h-10 rounded-md bg-white text-[#152237] font-medium text-sm mt-10 mb-12">
+				Voir plus de formations
+			</button>
 		</div>
 	</section>
+
 
 	<!-- Opinion -->
-	<section class="opinion">
-		<h2 class="client-opinion">Avis clients</h2>
-		<div class="opinion-container">
-			<figure class="opinion1">
-				<img src="./assets/images/juliette.png" alt="Photo de Juliette">
+	<section class="px-4 py-12 sm:px-24">
+
+			<h2 class="text-center font-extrabold text-5xl text-[#152237] uppercase mb-12">
+				Avis clients
+			</h2>
+
+			<div class="flex flex-col sm:flex-row sm:justify-center sm:gap-6">
+
+			<!-- Opinion 1 -->
+			<figure class="flex flex-col mb-10 sm:mb-0 sm:w-160">
+				<img class="w-40 h-40 rounded-full" src="./assets/images/juliette.png" alt="Photo de Juliette">
+
 				<figcaption>
-					<h3>Juliette</h3>
-					<div class="rating">
-						<img src="./assets/images/star-solid-full.svg" alt="Étoile">
-						<img src="./assets/images/star-solid-full.svg" alt="Étoile">
-						<img src="./assets/images/star-solid-full.svg" alt="Étoile">
-						<img src="./assets/images/star-solid-full.svg" alt="Étoile">
-						<img src="./assets/images/star-solid-full.svg" alt="Étoile">
+					<h3 class="font-bold text-2xl text-[#152237] my-2">
+						Juliette
+					</h3>
+					<div class="flex mb-1">
+						<img class="w-5 h-5" src="./assets/images/star-solid-full.svg" alt="Étoile">
+						<img class="w-5 h-5" src="./assets/images/star-solid-full.svg" alt="Étoile">
+						<img class="w-5 h-5" src="./assets/images/star-solid-full.svg" alt="Étoile">
+						<img class="w-5 h-5" src="./assets/images/star-solid-full.svg" alt="Étoile">
+						<img class="w-5 h-5" src="./assets/images/star-solid-full.svg" alt="Étoile">
 					</div>
-					<p class="pp">J’ai trouvé le parcours très bien structuré : vidéos courtes, quizzes pertinents et projets pratiques qui m’ont permis d’appliquer immédiatement les notions. L’interface est claire et la progression est motivante — parfait pour se former en autonomie.</p>
+					<p class="text-[#152237] text-xl">
+						J’ai trouvé le parcours très bien structuré : vidéos courtes, quizzes pertinents et projets pratiques qui m’ont permis d’appliquer immédiatement les notions. L’interface est claire et la progression est motivante — parfait pour se former en autonomie.
+					</p>
 				</figcaption>
 			</figure>
 
-			<figure class="opinion2">
-					<img src="./assets/images/camille.png" alt="Photo de Camille">
+			<!-- Opinion 2 -->
+			<figure class="flex flex-col mb-10 sm:mb-0 sm:w-160">
+				<img class="w-40 h-40 rounded-full" src="./assets/images/camille.png" alt="Photo de Camille">
+
 				<figcaption>
-					<h3>Camille</h3>
-					<div class="rating">
-						<img src="./assets/images/star-solid-full.svg" alt="Étoile">
-						<img src="./assets/images/star-solid-full.svg" alt="Étoile">
-						<img src="./assets/images/star-solid-full.svg" alt="Étoile">
-						<img src="./assets/images/star-solid-full.svg" alt="Étoile">
-						<img src="./assets/images/star-solid-full.svg" alt="Étoile">
+					<h3 class="font-bold text-2xl text-[#152237] my-2">
+					Camille
+					</h3>
+					<div class="flex mb-1">
+						<img class="w-5 h-5" src="./assets/images/star-solid-full.svg" alt="Étoile">
+						<img class="w-5 h-5" src="./assets/images/star-solid-full.svg" alt="Étoile">
+						<img class="w-5 h-5" src="./assets/images/star-solid-full.svg" alt="Étoile">
+						<img class="w-5 h-5" src="./assets/images/star-solid-full.svg" alt="Étoile">
+						<img class="w-5 h-5" src="./assets/images/star-solid-full.svg" alt="Étoile">
 					</div>
-					<p class="ppp">Bon équilibre entre théorie et pratique. Les chapitres sont détaillés, et le support et les corrections automatiques ont vraiment aidé. Idéal pour démarrer et progresser rapidement.</p>
+					<p class="text-xl text-[#152237]">
+						Bon équilibre entre théorie et pratique. Les chapitres sont détaillés, et le support et les corrections automatiques ont vraiment aidé. Idéal pour démarrer et progresser rapidement.
+					</p>
 				</figcaption>
 			</figure>
 		</div>
 	</section>
 
+
 	<!-- Advantages -->
-	<section class="advantages">
-		<h2>Les avantages Klivio</h2>
-		<div class="advantages-container">
-			<div class="col1">
+	<section class="bg-[#F5F5F5] w-full h-160">
+		<h2 class="text-center sm:text-left sm:pl-26 sm:pt-20 font-extrabold text-10 uppercase text-[#152237] text-5xl">
+			Les avantages Klivio
+		</h2>
+		<div class="flex mt-10">
+		
+			<!-- Icons col -->
+			<div class="flex flex-col gap-4 ml-24 mr-8">
 				<img src="./assets/images/arrow-up-right.png" alt="Icône de flèche">
 				<img src="./assets/images/edit-01.png" alt="Icône de crayon">
 				<img src="./assets/images/Icon.png" alt="Icône de téléchargement">
@@ -270,17 +336,37 @@
 				<img src="./assets/images/clock-backward.png" alt="Icône horloge">
 				<img src="./assets/images/mess.png" alt="Icône message">
 			</div>
-			<div class="col2">
-				<p>Suivi de sa progression</p>
-				<p>Exercices et QCM pour la mise en pratique</p>
-				<p class="desktop-p">Possibilité de télécharger/imprimer les formations</p>
-				<p class="mobile-p">Possibilité de télécharger/ imprimer les formations</p>
-				<p>Contenu qualitatif et vérifié</p>
-				<p>Suivi en autonomie, 24h/24, 7j/7</p>
-				<p>Espaces d’échanges dédiés pour poser ses questions sur les formations</p> 
+
+			<!-- Text col -->
+			<div class="flex flex-col gap-4 mr-16 w-150 h-75">
+				<p class="text-2xl">
+					Suivi de sa progression
+				</p>
+				<p class="text-2xl">
+					Exercices et QCM pour la mise en pratique
+				</p>
+				<!-- Desktop -->
+				<p class="hidden sm:block text-2xl">
+					Possibilité de télécharger/imprimer les formations
+				</p>
+				<!-- Mobile -->
+				<p class="block sm:hidden text-2xl">
+					Possibilité de télécharger/ imprimer les formations
+				</p>
+				<p class="text-2xl">
+					Contenu qualitatif et vérifié
+				</p>
+				<p class="text-2xl">
+					Suivi en autonomie, 24h/24, 7j/7
+				</p>
+				<p class="text-2xl">
+					Espaces d’échanges dédiés pour poser ses questions sur les formations
+				</p>
 			</div>
-			<img class="img-advantage" src="./assets/images/avantages.png" alt="Personne travaillant sur son ordi">
-			<img class="img-advantage-mobile" src="./assets/images/advantages-mobile.png" alt="Personne travaillant sur son ordi">
+			<!-- Image desktop -->
+			<img class="mt-[-5rem] hidden sm:block" src="./assets/images/avantages.png" alt="Personne travaillant sur son ordi">
+			<!-- Image mobile -->
+			<img class="block sm:hidden" src="./assets/images/advantages-mobile.png" alt="Personne travaillant sur son ordi">
 		</div>
 	</section>
 
